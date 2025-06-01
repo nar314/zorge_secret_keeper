@@ -2,7 +2,10 @@
 
 ## What is this.
 
-Solution to keep all your logins, tokens and other secrets in your own encrypted file.
+Solution to keep all logins, tokens and other secrets in your own encrypted file.
+
+![screen](https://github.com/user-attachments/assets/2bbf9a86-6767-4005-8246-8ce5cb4b65ed)
+
 
 ## How to run.
 
