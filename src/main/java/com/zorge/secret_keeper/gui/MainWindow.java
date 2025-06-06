@@ -360,7 +360,14 @@ public class MainWindow {
 		FileDialog dlg = new FileDialog(frame, "Select File to Open");
 	    dlg.setMode(FileDialog.LOAD);
 	    dlg.setVisible(true);
-	    final String file = dlg.getFile();
+	    
+	    File[] files = dlg.getFiles();
+	    if(files.length != 1) {
+	    	Utils.MessageBox_Error("File not selected.");
+	    	dlg.dispose();
+	    	return;
+	    }
+	    final String file = files[0].getAbsolutePath();
 	    dlg.dispose();
 	    
 	    if(file != null)
